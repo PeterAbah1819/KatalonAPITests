@@ -16,8 +16,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-
-
 //Send a request to the restful API and whatever response we get should be stored in 'Response'
 Response = WS.sendRequest(findTestObject('User/GetUserDetails'))
 
@@ -35,7 +33,5 @@ WS.verifyElementPropertyValue(Response, 'data.email', 'janet.weaver@reqres.in')
 
 WS.comment('Passed Beeshes!')
 
-WS.comment('Sorry')
-
-
+WS.comment('Xri')
 
