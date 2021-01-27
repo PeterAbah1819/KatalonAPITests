@@ -16,10 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-
-
 //Verify that the request sent responded with a response and store it in 'Responds'
-Responds = WS.sendRequest(findTestObject('Resource/ResourceNotFound'))
+Responds = WS.sendRequest(findTestObject('Resources/ResourceNotFound'))
 
 //Verify that the response gotten from the request is 404
 WS.verifyResponseStatusCode(Responds, 404)
@@ -31,7 +29,7 @@ WS.verifyElementPropertyValue(Responds, 'data', 'null')
 WS.verifyElementPropertyValue(Responds, 'null', 'null')
 
 WS.comment('Passed beeshees')
+
 // sorry
 WS.comment('Sorry')
-
 

@@ -16,10 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-
-
 //Verify that the request sent got a response back and the response should be stored in 'Respond'
-Respond = WS.sendRequest(findTestObject('Resource/GetResourceDetails'))
+Respond = WS.sendRequest(findTestObject('Resources/GetResourceDetails'))
 
 //Verify that the response gotten from the request sent is a 200
 WS.verifyResponseStatusCode(Respond, 200)
@@ -39,5 +37,4 @@ WS.verifyElementPropertyValue(Respond, 'data.pantone_value', '17-2031')
 WS.comment('Passed beeshees')
 
 WS.comment('Sorry')
-
 
