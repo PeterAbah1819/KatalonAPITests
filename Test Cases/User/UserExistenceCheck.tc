@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>UserExistenceCheck</name>
+   <tag>user existence check</tag>
+   <comment></comment>
+   <testCaseGuid>e7b49617-c56c-4658-bb5c-0609ad995bef</testCaseGuid>
+</TestCaseEntity>
